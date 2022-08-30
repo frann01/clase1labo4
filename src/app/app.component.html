@@ -1,0 +1,39 @@
+<main class="form-signin w-100 m-auto">
+
+    <img class="mb-4" src="https://getbootstrap.com/docs/5.0/assets/brand/bootstrap-logo.svg" alt="" width="72" height="57">
+    <h1 class="h3 mb-3 fw-normal">{{title}}</h1>
+
+    <div class="form-floating">
+      <input type="text" class="form-control" id="edadUno" placeholder="Edad Uno" [(ngModel)]="num1">
+      <label for="floatingInput">Edad Uno</label>
+    </div>
+    <div class="form-floating">
+      <input type="text" class="form-control" id="edadDos" placeholder="Edad Dos" [(ngModel)]="num2">
+      <label for="floatingPassword">Edad Dos</label>
+    </div>
+
+    
+    <h1> EL resultado es: {{suma}}</h1>
+    <h1> EL promedio es: {{promedio}}</h1>
+
+  <button class="w-100 btn btn-lg btn-primary" (click)="Calcular()">Calcular</button>
+  <br>
+  <button class="w-100 btn btn-lg btn-primary" (click)="Limpiar()" >Limpiar</button>
+
+  <div class="form-floating">
+    <input type="text" class="form-control" id="edadDos" placeholder="Edad Dos" [(ngModel)]="nombre">
+    <label for="floatingPassword">Nombre</label>
+  </div>
+
+  <div class="form-floating">
+    <input type="password" class="form-control" id="edadDos" placeholder="Edad Dos" [(ngModel)]="clave">
+    <label for="floatingPassword">Contraseña</label>
+  </div>
+
+  <button class="w-100 btn btn-lg btn-primary" (click)="Ingresar()">Ingresar</button>
+
+
+</main>
+
+
+<router-outlet></router-outlet>
